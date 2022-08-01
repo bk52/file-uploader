@@ -1,0 +1,90 @@
+:root{
+    --color:darkgray;
+    --color-hover:gray;
+}
+
+.uploader-input{
+    display: none;
+}
+
+.uploader-box{
+    display: block;
+    width:calc(100% - 16px);
+    height:200px; 
+    border:1px dashed var(--color);
+    margin:8px
+}
+
+.uploader-box.active{
+    cursor: pointer;
+}
+
+.uploader-box:hover{
+    border:1px dashed var(--color-hover);
+}
+
+.uploader-box-content{
+    width:100%; 
+    height:100%; 
+    display:flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content:center;
+    color: var(--color);
+}
+
+.uploader-box-content:hover{
+    color:var(--color-hover);
+}
+
+.uploader-box-content > span {
+    margin-top: 16px;
+    font-size: 12px;
+}
+
+.uploader-box-text{
+    margin-top: 12px !important;
+    font-size: 18px !important;
+}
+
+.uploader-box-allowed-text{
+    margin-top: 16px !important;
+    font-size: 12px !important;
+}
+
+.uploader-box-max-text{
+    margin-top: 4px !important;
+    font-size: 12px !important;
+}
+
+.uploader-box-alert{
+    margin-top: 8px;
+}
+
+.uploader-box-chip-list{
+    width: 100%;
+    margin-top: 8px;
+}
+
+.uploader-chip{
+    display: flex;
+    width: 100%;
+}
+
+.uploader-chip-list{
+    flex: 1;
+    overflow-x: auto;
+}
+
+.uploader-list-main{
+    font-family: 'Roboto';
+}
+
+.uploader-list-filename{
+    font-size: 14px;
+}
+
+.uploader-list-filesize{
+    font-size: 12px;
+    color:rgba(0, 0, 0, 0.6)
+}
